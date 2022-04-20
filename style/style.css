@@ -1,17 +1,98 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 
+:root {
+    --primary-color: #FF4825;
+    --secondary-color: #DF5E46;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Rubik';
-    background-color:aquamarine;
 }
 
-#btn-dark {
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: transparent;
+body {
+    position: relative;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #111111;
+    color: #fff;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.hero {
+    background-image: url(/assets/Background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 150px;
+    height: 100vh;
+    width: auto;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #fff;
+    z-index: 1;
+}
+
+.hero::before {
+    content: '';
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -2;
+}
+
+.hero button {
+    margin-top: 40px;
+    padding: 20px 30px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: transparent;
+    color: #fff;
+    border: ridge #fff;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    z-index: 100;
+    cursor: pointer;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-wrapper h1 {
+    margin-bottom: 50px;
+    font-size: 3.5rem;
+    letter-spacing: .20rem;
+    position: relative;
+    z-index: -1;
+}
+
+.about-wrapper h1::before {
+    content: 'FAQ About Me';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 100%;
+    height: 100%;
+    color: #FF4825;
+    z-index: -2;
+}
+
+.about-wrapper p {
+    font-size: 1.25rem;
 }
