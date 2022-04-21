@@ -95,4 +95,18 @@ body::-webkit-scrollbar {
 
 .about-wrapper p {
     font-size: 1.25rem;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+
+.FAQ {
+    position: relative;
+}
+
+.portrait {
+    position: absolute;
+    top: -100px;
+    right: -220px;
+    width: 700px;
+    height: 700px;
 }
