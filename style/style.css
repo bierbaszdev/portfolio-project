@@ -1,29 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 
 :root {
-    --primary-color: #FF4825;
-    --secondary-color: #DF5E46;
+    --primary-font: #FF4825;
+    --secondary-font: #DF5E46;
+
+    --primary-color: #111;
+    --secondary-color: #fbfbfb;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Rubik';
+    font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth !important;
 }
+
+html.dark {
+    --primary-color: #fbfbfb;
+    --secondary-color: #111;
+}
+
+html.dark {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
 
 body {
     position: relative;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    background-color: #111111;
-    color: #fff;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
     display: none;
+}
+
+.toggle {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.toggle:focus {
+    outline: none;
+}
+
+.welcome-content {
+    height: 100vh;
 }
 
 .logo-nav {
@@ -51,13 +82,13 @@ nav {
 
 .nav-content li a {
     text-decoration: none;
-    color: #fff;
+    color: var(--secondary-color);;
     font-size: 1.1rem;
     transition: color .4s ease;
 }
 
 .nav-content li a:hover {
-    color: #DF5E46;
+    color: var(--secondary-font);
 }
 
 .hero {
@@ -70,11 +101,11 @@ nav {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    height: 100vh;
+    height: 90vh;
     width: auto;
-    font-size: 30px;
+    font-size: 2.5rem;
     letter-spacing: 1px;
-    color: #fff;
+    color: #fbfbfb;;
     z-index: 1;
 }
 
@@ -85,28 +116,8 @@ nav {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: -2;
-}
-
-.hero button {
-    margin-top: 40px;
-    padding: 20px 30px;
-    font-size: 15px;
-    font-weight: 500;
-    background-color: transparent;
-    color: #fff;
-    border: ridge #fff;
-    border-radius: 50px;
-    letter-spacing: 1px;
-    z-index: 100;
-    cursor: pointer;
-    transition: all .4s ease-in-out;
-}
-.hero button:hover {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-    box-shadow: 0 0 1em var(--secondary-color);
 }
 
 .content-wrapper {
@@ -114,33 +125,39 @@ nav {
     margin: 0 auto;
 }
 
-#faq-h1,
+#abt-h1,
 #prct-h1 {
     margin-top: 150px;
     margin-left: -70px;
     margin-bottom: 50px;
+    color: var(--secondary-color);
     font-size: 3.5rem;
     letter-spacing: .20rem;
     position: relative;
-    z-index: -1;
+    z-index: 1;
 }
 
-#faq-h1::before {
-    content: '#FAQ About Me';
+#abt-h1::before {
+    content: '#About Me';
 }
 #prct-h1::before {
     content: '#My Projects';
 }
 
-#faq-h1::before,
+#abt-h1::before,
 #prct-h1::before {
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 3px;
+    left: 3px;
     width: 100%;
     height: 100%;
-    color: #FF4825;
+    color: var(--secondary-font);
     z-index: -2;
+}
+
+.fa.fa-angle-right {
+    padding: 10px;
+    color: var(--secondary-font);
 }
 
 .about-wrapper p {
@@ -149,7 +166,12 @@ nav {
     margin-top: 15px;
 }
 
-.FAQ {
+.about-wrapper h2 {
+    font-size: 1.5rem;
+    margin-left: -20px;
+}
+
+.ABT {
     position: relative;
 }
 
@@ -165,26 +187,28 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 150px;
+}
+
+#projects-wrapper div p{
+    font-size: 1.75rem;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .project-photo {
     width: 400px;
     height: 300px;
-    border: 3px ridge #fff;
+    border: 4px solid var(--secondary-font);
 }
 
-#projects-wrapper div p{
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    margin-left: -20px;
-}
 
 footer {
     background-color: #111;
     height: auto;
     width: 100vw;
     padding-top: 40px;
-    color: #fff;
+    color: #fbfbfb;
 }
 
 .footer-content {
@@ -214,7 +238,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 3rem 0;
+    margin: .5rem 0 1rem 0;
 }
 
 .socials li {
@@ -223,7 +247,7 @@ footer {
 
 .socials a {
     text-decoration: none;
-    color: #fff;
+    color: #fbfbfb;
 }
 
 .socials a i {
@@ -252,12 +276,4 @@ footer {
     text-transform: uppercase;
     opacity: 4;
     font-weight: 200;
-}
-
-.logo {
-    position: absolute;
-    left: 100px;
-    bottom: 20px;
-    width: 150px;
-    height: 150px;
 }

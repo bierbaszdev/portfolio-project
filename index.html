@@ -4,46 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/305515ddc5.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="style/style.css">
     <title>Portfolio Page</title>
 </head>
 <body>
-    <nav>
-        <img src="./assets/logo.png" alt="logo" class="logo-nav">
-        <ul class="nav-content">
-            <li>
-                <a href="#faq-h1">About me</a>
-            </li>
-            <li>
-                <a href="#">Features</a>
-            </li>
-            <li>
-                <a href="#">Contact</a>
-            </li>
-        </ul>
-    </nav>
-    <section class="hero">
-        <h1>Hello, Welcome On My Website!</h1>
-        <button>Click me</button>
-    </section>
+    <div class="welcome-content">
+        <nav>
+            <img src="./assets/logo.png" alt="logo" class="logo-nav">
+            <ul class="nav-content">
+                <li>
+                    <a href="#abt-h1">About me</a>
+                </li>
+                <li>
+                    <a href="#prct-h1">Features</a>
+                </li>
+                <li>
+                    <a href="#foot-h2">Contact</a>
+                </li>
+                <li>
+                    <button class="toggle">White mode</button>
+                </li>
+            </ul>
+        </nav>
+        <section class="hero">
+            <h1>Hello, Welcome On My Website!</h1>
+        </section>
+    </div>
     <div class="content-wrapper">
         <section class="about-wrapper">
-            <h1 id="faq-h1">#FAQ About Me</h1>
-                <div class="FAQ">
+            <h1 id="abt-h1">#About Me</h1>
+                <div class="ABT">
                     <h2>What's your fullname?</h2>
-                        <p><i class="fa-solid fa-angles-right"></i>  My fullname is Sebastian Bierbasz-Juchnowicz</p>
+                        <p><i class="fa fa-angle-right"></i>  My fullname is Sebastian Bierbasz-Juchnowicz.</p>
                     <h2>How old are you?</h2>
-                        <p><i class="fa-solid fa-angles-right"></i>  At this moment I'm 18, but in August I'll be 19 years old</p>
+                        <p><i class="fa fa-angle-right"></i>  At this moment I'm 18, but in August I'll be 19 years old.</p>
                     <h2>Where do you live?</h2>
-                        <p><i class="fa-solid fa-angles-right"></i>  In Piła, except weekends where I'm going back to my hometown Człopa</p>
+                        <p><i class="fa fa-angle-right"></i>  In Piła, except weekends where I'm going back to my hometown Człopa.</p>
                     <h2>Are you a student?</h2>
-                        <p><i class="fa-solid fa-angles-right"></i>  Yes, I'm student of Zespół Szkół Ekonomicznych in Piła, 3rd grade</p>
+                        <p><i class="fa fa-angle-right"></i>  Yes, I'm student of Zespół Szkół Ekonomicznych in Piła,<br /> 3rd grade of IT Specialist class.</p>
                     <h2>Are you employed?</h2>
-                        <p><i class="fa-solid fa-angles-right"></i>  Unfortunately not yet, I hope that will change soon</p>
+                        <p><i class="fa fa-angle-right"></i>  Unfortunately not yet, I hope that will change soon.</p>
                     <h2>What's your hobbys?</h2>
-                        <p><i class="fa-solid fa-angles-right"></i>  Playing football, computer games, programming, cooking and gym</p>
+                        <p><i class="fa fa-angle-right"></i>  Playing football, computer games, programming, cooking and gym.</p>
                     <img src="./assets/portrait-png.png" alt="That's me!" class="portrait">
                 </div>
         </section>
@@ -52,39 +56,40 @@
     </div>
         <section id="projects-wrapper">
             <div>
-                <p>1. Lorem, ipsum dolor.</p>
-                <a href="#">
+                <p>Tribute Page</p>
+                <a href="" class="img-trans">
                     <img src="./assets/project1.jpg" alt="First" class="project-photo">
                 </a>
             </div>
             <div>
-                <p>2. Lorem, ipsum dolor.</p>
-                <a href="#">
+                <p>Documentation Page</p>
+                <a href="" class="img-trans">
                     <img src="./assets/project2.jpg" alt="First" class="project-photo">
                 </a>
             </div>
             <div>
-                <p>3. Lorem, ipsum dolor.</p>
-                <a href="#">
+                <p>Health Questionnaire</p>
+                <a href="" class="img-trans">
                     <img src="./assets/project3.jpg" alt="First" class="project-photo">
                 </a>
             </div>
         </section>
     <footer>
         <div class="footer-content">
-            <h2>Code Opacity</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, suscipit omnis? Amet vel id et placeat corporis, earum distinctio illo nam nesciunt doloribus, quos iste illum ea nobis at voluptates!</p>
+            <h2 id="foot-h2">SBJ Company.</h2>
+            <p>I'm interested in every form of contact. Here are buttons which will move you to my social medias, where you can contact with me. </p>
             <ul class="socials">
-                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-google"></i></a></li>
-                <li><a href="#"><i class="fa fa-linkedin-square"></i></a></li>
-                <li><a href="#"><i class="fa fa-github"></i></a></li>
+                <li><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://google.com/"><i class="fa fa-google"></i></a></li>
+                <li><a href="https://pl.linkedin.com/"><i class="fa fa-linkedin-square"></i></a></li>
+                <li><a href="https://github.com/"><i class="fa fa-github"></i></a></li>
             </ul>
     </div>
     <div class="footer-bottom">
         <p>copyright &copy;2022 SBJCompany. designed by <span>Intenzy</span></p>
     </div>
     </footer>
+<script src="/index.js"></script>
 </body>
 </html>
