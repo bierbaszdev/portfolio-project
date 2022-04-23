@@ -61,7 +61,7 @@ nav {
 }
 
 .hero {
-    background-image: url(/assets/Background-img.jpg);
+    background-image: url(/style/assets/Background-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -115,7 +115,7 @@ nav {
 }
 
 #faq-h1,
-prct-h1 {
+#prct-h1 {
     margin-top: 150px;
     margin-left: -70px;
     margin-bottom: 50px;
@@ -128,12 +128,12 @@ prct-h1 {
 #faq-h1::before {
     content: '#FAQ About Me';
 }
-.prct-h1::before {
+#prct-h1::before {
     content: '#My Projects';
 }
 
 #faq-h1::before,
-.prct-h1::before {
+#prct-h1::before {
     position: absolute;
     top: 5px;
     left: 5px;
