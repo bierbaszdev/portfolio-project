@@ -61,7 +61,7 @@ nav {
 }
 
 .hero {
-    background-image: url(/style/assets/Background-img.jpg);
+    background-image: url(../assets/Background-img.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
