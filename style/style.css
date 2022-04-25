@@ -13,15 +13,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    scroll-behavior: smooth !important;
+    scroll-behavior: smooth;
 }
 
-html.dark {
+html.light {
     --primary-color: #fbfbfb;
     --secondary-color: #111;
 }
 
-html.dark {
+html.light {
     background-color: var(--secondary-color);
     color: var(--primary-color);
 }
@@ -82,7 +82,7 @@ nav {
 
 .nav-content li a {
     text-decoration: none;
-    color: var(--secondary-color);;
+    color: var(--secondary-color);
     font-size: 1.1rem;
     transition: color .4s ease;
 }
