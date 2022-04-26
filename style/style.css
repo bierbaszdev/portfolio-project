@@ -277,3 +277,20 @@ footer {
     opacity: 4;
     font-weight: 200;
 }
+
+
+@media screen and (max-width: 426px){
+    body {
+        max-width: 425px;
+        max-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .hero {
+        font-size: 1rem;
+    }
+
+    .nav-content a li {
+        font-size: 20px;
+    }
+}
